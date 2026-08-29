@@ -1,0 +1,19 @@
+{
+  "name": "album-label",
+  "version": "2.0.0",
+  "description": "CLI tool to rename and tag a music folder using MusicBrainz",
+  "main": "index.js",
+  "bin": {
+      "album-sorter": "./index.js"
+    },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests specified\" && exit 1"
+  },
+  "author": "MasterAcnolo",
+  "license": "ISC",
+  "dependencies": {
+    "node-id3": "^0.2.9",
+    "string-similarity": "^4.0.4"
+  }
+}
