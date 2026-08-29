@@ -1,4 +1,4 @@
-# album-label
+Track Match
 
 A CLI tool that renames and tags a local music folder using the [MusicBrainz](https://musicbrainz.org/) API - with fuzzy matching, confidence scoring, and interactive album selection.
 
@@ -26,8 +26,8 @@ Apply renames and tags? (y/n):
 ## Installation
 
 ```bash
-git clone https://github.com/MasterAcnolo/album-label
-cd album-label
+git clone https://github.com/MasterAcnolo/Track-Match
+cd Track-Match
 npm install
 ```
 
@@ -122,7 +122,7 @@ The file extension is always appended automatically.
 ## Project structure
 
 ```
-album-label/
+Track-Match/
 ├── index.js          # Entry point - CLI parsing, orchestration, I/O
 └── lib/
     ├── api.js         # MusicBrainz HTTP client + exponential backoff retry
@@ -148,6 +148,7 @@ album-label/
 - **MP3-only tagging** - `node-id3` only supports `.mp3`. FLAC, M4A, OGG and WAV files are renamed but not tagged.
 - **Top 5 results only** - if the correct release isn't in the top 5 MusicBrainz results, narrow the search with `--artist` and `--album`.
 - **Multi-disc albums** - track positions are read globally across all discs, which can produce duplicate position numbers on 2-disc releases.
+- **Exotic Artist Name** - For artists with non-ASCII characters in their name, the search may not be accurate. Use `--artist` to specify the exact name.
 
 ---
 
