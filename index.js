@@ -28,7 +28,7 @@ Arguments:
 
 Options:
   --artist,  -a <name>    Artist or band name (used to refine the API search)
-  --album,   -r <name>   Album name (defaults to the folder name)
+  --album,   -r <name>    Album name (defaults to the folder name)
   --output,  -o <dir>     Write renamed files to a separate output directory
   --format,  -f <pattern> Filename pattern (default: "{pos} - {title}")
                           Tokens: {pos}, {title}
