@@ -21,7 +21,7 @@ function formatConfidence(score) {
 
 function printUsage() {
     console.log(`
-Usage: album-sorter <path> [options]
+Usage: track-match <path> [options]
 
 Arguments:
   path                    Path to the folder containing audio files

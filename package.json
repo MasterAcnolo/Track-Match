@@ -1,11 +1,16 @@
 {
-  "name": "album-label",
+  "name": "@masteracnolo/track-match",
   "version": "2.0.0",
   "description": "CLI tool to rename and tag a music folder using MusicBrainz",
+  "homepage": "https://github.com/MasterAcnolo/Track-Match",
+  "repository": { "type": "git", "url": "https://github.com/MasterAcnolo/Track-Match" },
   "main": "index.js",
   "bin": {
-      "album-sorter": "./index.js"
-    },
+    "track-match": "./index.js"
+  },
+  "engines": {"node": ">=18.0.0" },
+  "files": ["index.js", "lib/"],
+  "keywords": ["sorter", "cli", "album", "music"],
   "scripts": {
     "start": "node index.js",
     "test": "echo \"No tests specified\" && exit 1"

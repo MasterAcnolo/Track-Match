@@ -25,10 +25,21 @@ Apply renames and tags? (y/n):
 
 ## Installation
 
+### Via npm (recommended)
+```bash
+npm install -g @masteracnolo/track-match
+```
+Then use it anywhere:
+```bash
+track-match <path> [options]
+```
+
+### From source
 ```bash
 git clone https://github.com/MasterAcnolo/Track-Match
 cd Track-Match
 npm install
+node index.js <path> [options]
 ```
 
 ---
